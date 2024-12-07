@@ -5,8 +5,8 @@ const { AccessToken, Role } = require("@huddle01/server-sdk/auth");
 require("dotenv").config();
 
 const app = express();
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
 // Endpoint to create a room
 app.post("/create-room", async (req, res) => {
